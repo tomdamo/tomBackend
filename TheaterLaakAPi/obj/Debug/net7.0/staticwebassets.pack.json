@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/js/chat.js",
+      "PackagePath": "staticwebassets/js/chat.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/js/signalr/dist/browser/signalr.js",
+      "PackagePath": "staticwebassets/js/signalr/dist/browser/signalr.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.TheaterLaakAPi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.TheaterLaakAPi.props",
+      "PackagePath": "build\\TheaterLaakAPi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.TheaterLaakAPi.props",
+      "PackagePath": "buildMultiTargeting\\TheaterLaakAPi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.TheaterLaakAPi.props",
+      "PackagePath": "buildTransitive\\TheaterLaakAPi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
