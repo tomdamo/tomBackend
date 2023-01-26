@@ -95,13 +95,13 @@ namespace TheaterLaakAPi.Controllers
             if (betaling.succes == false)
             {
                 //betaling is niet gelukt!
-                return Redirect("http://localhost:3000/Cancel");
+                return Redirect("https://amirsgateway.nl/cancel");
             }
             else
             {
 
                 //dit geval wel
-                return Redirect("http://localhost:3000/Succes");
+                return Redirect("https://amirsgateway.nl/succes");
             }
             // return CreatedAtAction("GetBetaling", new { id = betaling.id }, betaling);
         }

@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:29802",
+      "applicationUrl": "https://laakgroep5.azurewebsites.net/",
       "sslPort": 44328
     }
   },
@@ -13,7 +13,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5044",
+      "applicationUrl": "https://laakgroep5.azurewebsites.net/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -22,7 +22,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7202;http://localhost:5044",
+      "applicationUrl": "https://laakgroep5.azurewebsites.net/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -38,7 +38,7 @@
     "TheaterLaakAPi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:50711;http://localhost:25965",
+      "applicationUrl": "https://laakgroep5.azurewebsites.net/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
