@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj": {}
+    "C:\\Users\\tomda\\Source\\Repos\\tomdamo\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj": {
+    "C:\\Users\\tomda\\Source\\Repos\\tomdamo\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj",
+        "projectUniqueName": "C:\\Users\\tomda\\Source\\Repos\\tomdamo\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj",
         "projectName": "TheaterLaakAPi",
-        "projectPath": "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj",
+        "projectPath": "C:\\Users\\tomda\\Source\\Repos\\tomdamo\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj",
         "packagesPath": "C:\\Users\\tomda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\obj\\",
+        "outputPath": "C:\\Users\\tomda\\Source\\Repos\\tomdamo\\tomBackend\\TheaterLaakAPi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomda\\AppData\\Roaming\\NuGet\\NuGet.Config",

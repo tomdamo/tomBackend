@@ -1,0 +1,1347 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "TheaterLaakAPi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Authentication/Register": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UserRegister"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authentication/Login": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UserLogin"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Bestelling": {
+      "get": {
+        "tags": [
+          "Bestelling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Bestelling"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Bestelling"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Bestelling"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Bestelling"
+            }
+          }
+        }
+      }
+    },
+    "/api/Bestelling/{id}": {
+      "get": {
+        "tags": [
+          "Bestelling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Bestelling"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Bestelling"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Bestelling"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Bestelling"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Betaling": {
+      "get": {
+        "tags": [
+          "Betaling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Betaling"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Betaling"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "reference",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "succes",
+            "type": "boolean"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Betaling"
+            }
+          }
+        }
+      }
+    },
+    "/api/Betaling/{id}": {
+      "get": {
+        "tags": [
+          "Betaling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Betaling"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Betaling"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Betaling"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Betaling"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Groep": {
+      "get": {
+        "tags": [
+          "Groep"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Groep"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Groep"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Groep"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Groep"
+            }
+          }
+        }
+      }
+    },
+    "/api/Groep/{id}": {
+      "delete": {
+        "tags": [
+          "Groep"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/beschikbarestoelen/{id}": {
+      "get": {
+        "tags": [
+          "PlaatsBestelling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Zaal"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/voorstellingInfo/{id}": {
+      "get": {
+        "tags": [
+          "PlaatsBestelling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Zaal"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Rang": {
+      "get": {
+        "tags": [
+          "Rang"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Rang"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Rang"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Rang"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Rang"
+            }
+          }
+        }
+      }
+    },
+    "/api/Rang/{id}": {
+      "get": {
+        "tags": [
+          "Rang"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Rang"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Rang"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Rang"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Rang"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Stoel": {
+      "get": {
+        "tags": [
+          "Stoel"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Stoel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Stoel"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Stoel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Stoel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Stoel/{id}": {
+      "get": {
+        "tags": [
+          "Stoel"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Stoel"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Stoel"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Stoel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Stoel"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/Account": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApplicationUser"
+            }
+          }
+        }
+      }
+    },
+    "/api/Voorstelling": {
+      "get": {
+        "tags": [
+          "Voorstelling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Voorstelling"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Voorstelling"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Voorstelling"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Voorstelling"
+            }
+          }
+        }
+      }
+    },
+    "/api/Voorstelling/{id}": {
+      "get": {
+        "tags": [
+          "Voorstelling"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Voorstelling"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Voorstelling"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Voorstelling"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Voorstelling"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Zaal": {
+      "post": {
+        "tags": [
+          "Zaal"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Zaal"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Zaal"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ApplicationUser": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userName": {
+          "type": "string"
+        },
+        "normalizedUserName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "normalizedEmail": {
+          "type": "string"
+        },
+        "emailConfirmed": {
+          "type": "boolean"
+        },
+        "passwordHash": {
+          "type": "string"
+        },
+        "securityStamp": {
+          "type": "string"
+        },
+        "concurrencyStamp": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "phoneNumberConfirmed": {
+          "type": "boolean"
+        },
+        "twoFactorEnabled": {
+          "type": "boolean"
+        },
+        "lockoutEnd": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lockoutEnabled": {
+          "type": "boolean"
+        },
+        "accessFailedCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "voornaam": {
+          "type": "string"
+        },
+        "achternaam": {
+          "type": "string"
+        },
+        "reserveringen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reservering"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Artiest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userName": {
+          "type": "string"
+        },
+        "normalizedUserName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "normalizedEmail": {
+          "type": "string"
+        },
+        "emailConfirmed": {
+          "type": "boolean"
+        },
+        "passwordHash": {
+          "type": "string"
+        },
+        "securityStamp": {
+          "type": "string"
+        },
+        "concurrencyStamp": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "phoneNumberConfirmed": {
+          "type": "boolean"
+        },
+        "twoFactorEnabled": {
+          "type": "boolean"
+        },
+        "lockoutEnd": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lockoutEnabled": {
+          "type": "boolean"
+        },
+        "accessFailedCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "voornaam": {
+          "type": "string"
+        },
+        "achternaam": {
+          "type": "string"
+        },
+        "reserveringen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reservering"
+          }
+        },
+        "groepen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Groep"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Bestelling": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "amount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Betaling": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "succes": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Groep": {
+      "type": "object",
+      "properties": {
+        "groepId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "groepNaam": {
+          "type": "string"
+        },
+        "bandWebsite": {
+          "type": "string"
+        },
+        "logoLink": {
+          "type": "string"
+        },
+        "artiesten": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Artiest"
+          }
+        },
+        "voorstellingen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Voorstelling"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Rang": {
+      "type": "object",
+      "properties": {
+        "rangId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "rangNr": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "capiciteit": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "stoelen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Stoel"
+          }
+        },
+        "zaalId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "zaal": {
+          "$ref": "#/definitions/Zaal"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Reservering": {
+      "type": "object",
+      "properties": {
+        "reserveringId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "reserveringsDatum": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "isBetaald": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "stoelId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "stoel": {
+          "$ref": "#/definitions/Stoel"
+        },
+        "applicationUserId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "applicationUser": {
+          "$ref": "#/definitions/ApplicationUser"
+        },
+        "voorstellingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "voorstelling": {
+          "$ref": "#/definitions/Voorstelling"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Stoel": {
+      "type": "object",
+      "properties": {
+        "stoelId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "stoelNr": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isInvalide": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "reserveringen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reservering"
+          }
+        },
+        "rangId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "rang": {
+          "$ref": "#/definitions/Rang"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserLogin": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserRegister": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "voornaam": {
+          "type": "string"
+        },
+        "achternaam": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Voorstelling": {
+      "type": "object",
+      "properties": {
+        "voorstellingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "titel": {
+          "type": "string"
+        },
+        "tijd": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "beschrijving": {
+          "type": "string"
+        },
+        "prijs": {
+          "format": "double",
+          "type": "number"
+        },
+        "startDatum": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "eindDatum": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "zaalId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "zaal": {
+          "$ref": "#/definitions/Zaal"
+        },
+        "reserveringen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reservering"
+          }
+        },
+        "groepen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Groep"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Zaal": {
+      "type": "object",
+      "properties": {
+        "zaalId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "rangen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Rang"
+          }
+        },
+        "voorstellingen": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Voorstelling"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
