@@ -17,8 +17,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy(MyAllowSpecificOrigins,
                           policy =>
                           {
-                              policy.WithOrigins("http://laakgroep5.azurewebsites.net/", //uiteindelijk de azure sites hierbij voegen.
-                                                  "https://laakgroep5.azurewebsites.net/") //hier ook.
+                              policy.WithOrigins("http://amirsgateway.nl/", //uiteindelijk de azure sites hierbij voegen.
+                                                  "https://amirsgateway.nl/") //hier ook.
                                                   .AllowAnyHeader()
                                                   .AllowAnyOrigin()
                                                   .AllowAnyMethod();
@@ -74,13 +74,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
 {
-    build.WithOrigins("https://laakgroep5.azurewebsites.net/").AllowAnyMethod().AllowAnyHeader();
+    build.WithOrigins("https://amirsgateway.nl/").AllowAnyMethod().AllowAnyHeader();
 }));
 
 builder.Services.AddDistributedMemoryCache();
 
 var app = builder.Build();
-    app.UseSwagger();
+app.UseSwagger();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
