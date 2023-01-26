@@ -29,7 +29,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<DbContext, DatabaseContext>(
-    opt => opt.UseSqlite("Data Source=mydb.db")
+    opt => opt.UseSqlServer("DBContext")
 );
 
 builder.Services
