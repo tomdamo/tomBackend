@@ -13760,19 +13760,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/admin/.nuget/packages/": {}
+    "C:\\Users\\tomda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/TheaterLaakAPi.csproj",
+      "projectUniqueName": "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj",
       "projectName": "TheaterLaakAPi",
-      "projectPath": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/TheaterLaakAPi.csproj",
-      "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/Documents/tomBackend/TheaterLaakAPi/obj/",
+      "projectPath": "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\TheaterLaakAPi.csproj",
+      "packagesPath": "C:\\Users\\tomda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomda\\Documents\\GitHub\\tomBackend\\tomBackend\\TheaterLaakAPi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/admin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\tomda\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -13896,7 +13896,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

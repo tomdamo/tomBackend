@@ -9,25 +9,25 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TheaterLaakAPi
 build_property.RootNamespace = TheaterLaakAPi
-build_property.ProjectDir = /Users/admin/Documents/tomBackend/TheaterLaakAPi/
+build_property.ProjectDir = C:\Users\tomda\Documents\GitHub\tomBackend\tomBackend\TheaterLaakAPi\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/admin/Documents/tomBackend/TheaterLaakAPi
+build_property.MSBuildProjectDirectory = C:\Users\tomda\Documents\GitHub\tomBackend\tomBackend\TheaterLaakAPi
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/admin/Documents/tomBackend/TheaterLaakAPi/Pages/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvaW5kZXguY3NodG1s
+[C:/Users/tomda/Documents/GitHub/tomBackend/tomBackend/TheaterLaakAPi/Pages/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/admin/Documents/tomBackend/TheaterLaakAPi/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/tomda/Documents/GitHub/tomBackend/tomBackend/TheaterLaakAPi/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/admin/Documents/tomBackend/TheaterLaakAPi/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/tomda/Documents/GitHub/tomBackend/tomBackend/TheaterLaakAPi/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/admin/Documents/tomBackend/TheaterLaakAPi/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/tomda/Documents/GitHub/tomBackend/tomBackend/TheaterLaakAPi/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
